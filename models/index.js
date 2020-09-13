@@ -1,7 +1,7 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
 // Mongo connections 
-mongoose.connect(process.env.ATLAS_URI|| process.env.MONGO_URI, {
+mongoose.connect(process.env.ATLAS_URI || process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: true
