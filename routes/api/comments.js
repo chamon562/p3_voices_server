@@ -8,7 +8,13 @@ const JWT_SECRET = process.env.JWT_SECRET;
 console.log(process.env);
 const db = require('../../models');
 let Comments = require('../../models/Comments')
+
+
+
+
+
 router.get('/test', (req, res) => {
+    console.log(req.body)
     res.json({ msg: 'User endpoint OK'});
   });
 // find all comments
